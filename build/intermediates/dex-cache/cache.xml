@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Ja\.android\build-cache\3280436a5091c1542b6ac5b64e1ab7cc3bd5ac51\output\jars\classes.jar"
+        jar="C:\Users\Ja\.android\build-cache\772bc299896f933cec7e69446ececbcb1a3d5e9e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
-        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1a429dae72bedf26f5f163d9f1bc9d546042fb01\classes.dex" />
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b42a4fccd4b445a3c9d38a9403bed7d79e942e03\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -16,17 +16,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="132af54cf9fbc686a7b7d45f1687d3ff2a25619b">
+        sha1="8496225238b6a6843c1aad2dfdd008baa77ef074">
         <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ddcb5f2cc00976cb837f3ea43dc4c042b9653e89\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ja\.android\build-cache\b06937817a7ece78735f83a3a3a87a0b71866871\output\jars\classes.jar"
+        jar="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
-        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a123e3565f24f5a1f649cda15be9c877a3351d16\classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c71d247217372687b5a92acb2d3515aa9ffdb2ef\classes.dex" />
     </item>
 
 </items>

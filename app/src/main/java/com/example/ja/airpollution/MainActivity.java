@@ -1,5 +1,6 @@
 package com.example.ja.airpollution;
 
+import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -17,9 +18,13 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.widget.Toast;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
+
+import java.security.Permissions;
 
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -122,10 +127,21 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String s = "\n " + "Please wait, getting coordinates,\n if it takes too long move around or go outside";
 
                 //locationManager.requestLocationUpdates("gps", 5000, 0, listener);
-                locationManager.requestSingleUpdate("gps", listener, Looper.getMainLooper());
-                t.setText("\n " + "Please wait, getting coordinates,\n move around or go outside if it takes too long");
+                //Nie potrzebne sprawdzanie uprawnień, zostały sprawdzone wcześniej
+                try {
+                    locationManager.requestSingleUpdate("gps", listener, Looper.getMainLooper());
+                }
+                catch(SecurityException e){
+                    Context context = getApplicationContext();
+                    CharSequence text = "Access denied, can't acquire permission for gps";
+                    int duration = Toast.LENGTH_LONG;
+                    Toast.makeText(context, text, duration).show();
+
+                }
+                t.setText(s);
             }
         });
     }
