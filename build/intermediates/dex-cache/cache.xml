@@ -21,39 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ja\.android\build-cache\1809dcc99b32de54d808b52dc3cbd7d315d8a594\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
-        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f124466248e85e5a54c70febca939c34460e087b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Ja\.android\build-cache\b06937817a7ece78735f83a3a3a87a0b71866871\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
         <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a123e3565f24f5a1f649cda15be9c877a3351d16\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Ja\.android\build-cache\24a71f39415351a1c33e22cb3b6018890d68c5e7\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
-        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e975c78e78536d35f05ad4ad2a339d5604b52a13\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\Ja\AndroidStudioProjects\Airpollution\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c71d247217372687b5a92acb2d3515aa9ffdb2ef\classes.dex" />
     </item>
 
 </items>
