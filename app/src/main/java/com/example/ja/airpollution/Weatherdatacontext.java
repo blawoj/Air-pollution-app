@@ -1,7 +1,7 @@
 package com.example.ja.airpollution;
 
 
-public class Weatherdatacontext {
+public class WeatherDataContext {
 
     /*Pozyskiwnaie danych przez API https://breezometer.com/api/ oraz wyciaganie danych z jsona.
     Wyciągnięte dane przedstawiane są w postaci słupków, wykresów. Dodatkowo dostajemy inforamcje
