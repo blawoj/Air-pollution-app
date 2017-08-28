@@ -26,8 +26,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
-import java.security.Permissions;
-
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
@@ -48,7 +46,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        main_menu();
+    }
 
+    public void main_menu(){
         setContentView(R.layout.activity_main);
 
         if (mGoogleApiClient == null) {
@@ -96,22 +97,23 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             }
         };
 
-        configure_button();
+        getlocation_button();
         nextButton();
+
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode){
             case 10:
-                configure_button();
+                getlocation_button();
                 break;
             default:
                 break;
         }
     }
 
-    void configure_button(){
+    public void getlocation_button(){
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -129,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s = "\n " + "Please wait, getting coordinates,\n if it takes too long move around or go outside";
+                String s = "Please wait, getting coordinates,\n if it takes too long move around or go outside";
 
                 //locationManager.requestLocationUpdates("gps", 5000, 0, listener);
                 //Nie potrzebne sprawdzanie uprawnień, zostały sprawdzone wcześniej
@@ -165,8 +167,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.activity_main);
-                configure_button();
-                nextButton();
+                main_menu();
             }
         });
     }
